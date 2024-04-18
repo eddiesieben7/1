@@ -14,6 +14,10 @@ public class Dozierender {
         this.bueronummer = bueronummer;
     }
 
+    public String getName() {
+        return nameDozent;
+    }
+
    
     public void frageBeantworten(Studierender studierender, String frage) {
         System.out.println("Frage von " + studierender.getName() + ": " + frage);
@@ -24,6 +28,11 @@ public class Dozierender {
 
 
     }
+
+    public void anfrageSprechstunde (Studierender studierender, String dozent, String kurs, String anliegen) {
+        System.out.println("Anfrage von " + studierender.getName() + ". Kurs: " + kurs + "Anliegen: "+  anliegen);
+    }
+       
 
     
 }
